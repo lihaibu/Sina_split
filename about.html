@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1">
+
+    <tr>
+        <th>URL</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    {% for item in data_list %}
+    <tr>
+        <td>{{item["url"]}}</td>
+        <td>{{item["title"]}}</td>
+        <td>{{item["content"]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
